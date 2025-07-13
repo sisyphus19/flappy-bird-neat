@@ -8,14 +8,18 @@ import matplotlib.pyplot as plt
 SIZE = (500, 800)
 WIN = None
 
+IMG_DIR = os.path.join(os.path.dirname(__file__), "imgs")
 
 # Asset loading
-BIRDS = [pygame.transform.scale2x(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\bird1.png")),
-         pygame.transform.scale2x(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\bird2.png")),
-         pygame.transform.scale2x(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\bird3.png"))]
-PIPE = pygame.transform.scale2x(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\pipe.png"))
-BASE = pygame.transform.scale2x(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\base.png"))
-BG = pygame.transform.scale(pygame.image.load(r"C:\Users\ATHARV\Downloads\flappybird_tut\imgs\bg_3.png"),SIZE)
+BIRDS = [
+    pygame.transform.scale2x(pygame.image.load(os.path.join(IMG_DIR, "bird1.png"))),
+    pygame.transform.scale2x(pygame.image.load(os.path.join(IMG_DIR, "bird2.png"))),
+    pygame.transform.scale2x(pygame.image.load(os.path.join(IMG_DIR, "bird3.png")))
+]
+PIPE = pygame.transform.scale2x(pygame.image.load(os.path.join(IMG_DIR, "pipe.png")))
+BASE = pygame.transform.scale2x(pygame.image.load(os.path.join(IMG_DIR, "base.png")))
+BG = pygame.transform.scale(pygame.image.load(os.path.join(IMG_DIR, "bg_3.png")), SIZE)
+
 
 
 class QuitGameException(Exception):
@@ -319,8 +323,6 @@ def test_best(config_path, genome_path="best_genome.pkl"):
 
         base.move()
         render(WIN, [bird], pipes, base, score)
-
-
 
 #Neat training
 def launch():
