@@ -42,7 +42,7 @@ Want to test your own reflexes? Play Flappy Bird manually with keyboard controls
 ### Run It
 ```bash
 python play.py
-
+```
 ---
 
 ## Lessons Learned:
