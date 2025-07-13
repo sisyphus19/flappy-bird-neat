@@ -43,6 +43,8 @@ Want to test your own reflexes? Play Flappy Bird manually with keyboard controls
 ```bash
 python play.py
 
+---
+
 ## Lessons Learned:
 This project taught me how powerful evolutionary algorithms can be when paired with visual feedback. Watching birds go from clueless to skillful over generations was exciting and deeply satisfying.
 
