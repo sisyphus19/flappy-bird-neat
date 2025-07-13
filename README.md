@@ -2,7 +2,7 @@
 
 A self-learning AI that plays Flappy Bird using NEAT (NeuroEvolution of Augmenting Topologies). It learns over generations, improving its gameplay with zero hardcoding. Watch evolution in action!
 
-🔗 [Live Demo (Video/GIF or Hosted Project)](http://recruiters-love-seeing-live-demos.com/)
+🔗 [Live Demo (Video/GIF or Hosted Project)](imgs/demo.mp4)
 
 ![Flappy Bird AI Screenshot](imgs/preview.png)
 *alt: Screenshot of the Flappy Bird AI in action, dodging pipes*
@@ -42,8 +42,6 @@ Want to test your own reflexes? Play Flappy Bird manually with keyboard controls
 ### Run It
 ```bash
 python play.py
-```
----
 
 ## Lessons Learned:
 This project taught me how powerful evolutionary algorithms can be when paired with visual feedback. Watching birds go from clueless to skillful over generations was exciting and deeply satisfying.
